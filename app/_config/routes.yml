@@ -1,0 +1,11 @@
+---
+Name: approutes
+After:
+  - '#rootroutes'
+  - '#coreroutes'
+---
+SilverStripe\Control\Director:
+  rules:
+    # 'form/contact/send//': 'ContactController'
+    'form/apply/send//': 'ApplyController'
+    'form/apply/upload//$Action/$ID': 'ApplyUploadController'

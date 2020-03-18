@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'flama';
+    src: url('flama-bolditalic-webfont.woff2') format('woff2'),
+         url('flama-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}

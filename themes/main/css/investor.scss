@@ -1,0 +1,315 @@
+.invstr_frame1 {
+	padding-top: 115px;
+	background-color: #f9f9f9;
+	.frm-cntnr {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+
+	.sidebar_hldr {
+		width: 23%;
+		margin-right: 3%;
+	}
+
+	.sidebar_cntnr {
+		border-radius: 3px;
+		box-shadow: 0px 0px 8px #ccc;
+		overflow: hidden;
+	}
+
+	.sidebar_subcat-hldr {
+		padding: 10px 0px;
+		display: none;
+	}
+
+	.sidebar_category {
+
+		&.current {
+			.sidebar_subcat-hldr {
+				display: block;
+			}
+
+			.fa-caret-down {
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+		&:first-child {
+			.sidebar_cat-name {
+				background-color: #f4742d;
+			}
+		}
+
+		&:nth-child(2) {
+			.sidebar_cat-name {
+				background-color: #f9b02a;
+			}
+		}
+
+		&:nth-child(3) {
+			.sidebar_cat-name {
+				background-color: #248eca;
+			}
+		}
+	}
+
+
+	.sidebar_cat-name {
+		position: relative;
+		padding: 5px 20px;
+
+		p {
+			cursor: pointer;
+		}
+
+		.fa-caret-down {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			color: white;
+		}
+
+		p {
+			color: white;
+			font-weight: bold;
+		}
+	}
+
+	.sidebar_subcat {
+		padding: 0px 20px;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.active {
+			a {
+				font-weight: bold;
+				color: black;
+				p {
+					font-weight: bold;
+					color: black;
+				}
+			}
+		}
+
+		a {
+			cursor: pointer;
+			color: #ccc;
+			line-height: 20px !important;
+		}
+	}
+
+	.article-hldr {
+		width: 74%;
+	}
+
+	.article-card {
+		width: 31.83%;
+		margin-right: 2%;
+		margin-bottom: 30px;
+		box-shadow: 0px 0px 8px #ccc;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		.image {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+			height: 150px;
+		}
+
+		.article-content-hldr {
+			padding: 20px 10px;
+		}
+
+		.article-name {
+			margin-bottom: 20px;
+			height: 41px;
+			* {
+				line-height: 20px;
+				font-size: 16px;
+				color: gray;
+			}
+
+			i {
+				font-size: 12px;
+			}
+		}
+
+		.article-link {
+			* {
+				color: #e42426;
+			}
+		}
+	}
+
+	.pdf-card {
+		width: calc(31.83% - 40px);
+		margin-right: 2%;
+		margin-bottom: 30px;
+		box-shadow: 0px 0px 8px #ccc;
+		height: 200px;
+		padding: 20px;
+		background-color: white;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		.wrapper {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+		}
+
+		.pdf-image {
+			margin-bottom: 20px;
+		}
+
+		.pdf-name {
+			width: 130px;
+			text-align: center;
+			margin: auto;
+			* {
+				color: #248eca;
+				text-decoration: underline;
+			}
+		}
+
+		.image {
+			width: 60px;
+			height: 70px;
+			margin: auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+
+
+	}
+}
+
+
+
+
+.article_frame1 {
+	position: relative;
+	padding-top: 115px;
+	background-color: #f9f9f9;
+	.frm-cntnr {
+		padding: 50px 0;
+
+	}
+
+	.article-title-hldr {
+		margin-bottom: 20px;
+	}
+
+	.article-name {
+		* {
+			font-weight: bold;
+			line-height: 24px;
+		}
+	}
+
+	.article-date {
+		* {
+			font-style: italic;
+			font-size: 12px;
+			color: #ccc;
+		}
+	}
+
+	.latest-hldr {
+		width: 65%;
+		margin-right: 2%;
+
+		.latest-image {
+			margin-bottom: 15px;
+		}
+
+		.image {
+			width: 100%;
+			height: 400px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.latest-desc {
+			margin-bottom: 20px;
+			h6 {
+				font-size: 12px;
+				line-height: 16px;
+				color: #2b2b2b;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				color: #2b2b2b;
+			}
+		}
+
+		.goback-btn {
+			* {
+				font-size: 14px;
+				font-weight: bold;
+				color: #e42426;
+			}
+		}
+	}
+
+	.related-cntnr {
+		width: 33%;
+		a {
+			&:last-child {
+				.related-article {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.related-article {
+			margin-bottom: 20px;
+
+			.related-image {
+				width: 25%;
+				margin-right: 5%;
+
+				.image {
+					width: 100%;
+					height: 60px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
+			}
+
+			.related-detail {
+				width: 70%;
+			}
+
+			.related-name {
+				* {
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 18px;
+					color: #5c5c5c;
+				}
+			}
+
+			.related-date {
+				* {
+					font-size: 14px;
+					color: #ccc;
+					font-style: italic;
+				}
+			}
+		}
+
+
+	}
+}

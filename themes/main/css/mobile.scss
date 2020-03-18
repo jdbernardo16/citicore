@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+
+@media screen and (max-width: 1170px) {
+
+	.hdr-frame .hdr__midCon .hdr__link {
+		margin: 0 5px;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	/*=================================================================================
+	|                                  Header Styling                                 |1024px
+	=================================================================================*/
+	.hdr-frame {
+
+		.hdr__topCon {
+			position: fixed;
+			bottom: 20px;
+			z-index: 101;
+			width: 100%;
+			margin: auto;
+			opacity: 0;
+			transition-delay: -1s;
+			pointer-events: none;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+				transition-delay: 0.3s;
+			}
+
+			.width--90 {
+				text-align: center;
+			}
+
+			a {
+				color: #5C5C5C;
+			}
+		}
+
+		.hdr__midCon {
+			background-color: #ffffff;
+
+			.hdr__link {
+				display: block;
+				color: #5C5C5C;
+				text-align: center;
+				margin: 10px 0;
+
+				&:nth-child(4) {
+					width: 100%;
+				}
+
+				a {
+					font-size: 1rem;
+				}
+			}
+
+			.to-Mob {
+				display: block;
+			}
+
+			.to-Mob.active + ul.inlineBlock-parent {
+				transform: translateX(0%);
+			}
+
+			ul.inlineBlock-parent {
+				position: fixed;
+				z-index: 100;
+				top: 85px;
+				left: 0;
+				height: calc(100% - 75px);
+				width: 100%;
+				background-color: #ffffff;
+				transform: translateX(-100%);
+			}
+		}
+
+		.hdr__botCon {
+			display: flex;
+		}
+	}
+
+
+
+
+
+	/*=================================================================================
+	|                                  Footer Styling                                 |1024px
+	=================================================================================*/
+	.ftr-frame {
+
+		.width--80 {
+			width: 90%;
+		}
+
+		.ftr__topCon {
+			display: block;
+
+			.width--30 {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+
+			.width--45 {
+				width: 100%;
+			}
+		}
+	}
+
+
+
+
+
+	/*=================================================================================
+	|                                    Home Styling                                 |1024px
+	=================================================================================*/
+	.hm-frame1 .hm1__sliderListCon .frm-cntnr {
+
+		.width--50 {
+			width: 80%;
+		}
+
+		h1 {
+			font-size: 39px;
+		}
+	}
+
+	.hm-frame2 {
+
+		.frm-cntnr {
+			display: flex;
+			flex-direction: column-reverse;
+			flex-wrap: wrap;
+			width: 90%;
+
+			> * {
+				display: block;
+				width: 100%;
+			}
+
+			.width--50:nth-child(1) {
+				padding-right: 0px;
+				margin-top: 40px;
+			}
+
+			.width--50:nth-child(2) {
+				padding-left: 0px;
+			}
+		}
+	}
+
+	.hm-frame3 {
+
+		.frm-cntnr {
+			width: 90%;
+		}
+
+		.hm3__titleCon .width--60 {
+			width: 100%;
+		}
+
+		.hm3__contentCon {
+
+			&.page-grid.grid-3 {
+				display: block;
+			}
+
+			.page__gridChild {
+				display: inline-block;
+				width: 47%;
+				height: 100%;
+				vertical-align: top;
+				margin-bottom: 60px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				&:nth-child(2n -1) {
+					padding-right: 2%;
+				}
+
+				&:nth-child(2n) {
+					padding-left: 2%;
+				}
+			}
+
+			.hm3__imgCon {
+				position: unset;
+				height: 0;
+				padding-top: 100%;
+			}
+
+			.hm3__textCon {
+				display: none;
+			}
+
+			.hm3__textPrev {
+				position: unset;
+				display: block;
+				background-color: transparent;
+				padding: 0;
+				margin-top: 20px;
+				opacity: 1;
+
+				.hm3__arrow {
+					display: none;
+				}
+
+				h6, p {
+					color: #5C5C5C;
+				}
+			}
+		}
+
+		.hm3__BGHolder {
+			height: 500px;
+		}
+
+		.hm3__bgGray {
+			height: 500px;
+		}
+	}
+
+	/*.hm-frame4 {
+		padding-top: 0;
+		padding-bottom: 100px;
+
+		.frm-cntnr {
+			width: 90%;
+		}
+
+		.hm4__contentCon {
+			width: 100%;
+
+			.hm4__listCon {
+				width: 47%;
+				margin-bottom: 60px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}*/
+
+}
+
+@media screen and (max-width: 768px) {
+
+	/*=================================================================================
+	|                                  Footer Styling                                 |768px
+	=================================================================================*/
+	.ftr-frame {
+
+		.ftr__bgBlue {
+			transform: skew(0deg,3deg);
+		}
+
+		.ftr__bgGray {
+			top: 30px;
+		}
+	}
+
+
+
+
+
+	/*=================================================================================
+	|                                    Home Styling                                 |768px
+	=================================================================================*/
+	.hm-frame1 {
+		height: 100%;
+		padding-bottom: 50px;
+		margin-top: 85px;
+
+		.hm1__sliderListCon {
+			height: 100%;
+			flex-direction: column-reverse;
+
+			.hm1__sliderBGCon {
+				position: unset;
+				height: 70vh;
+				height: 300px;
+			}
+
+			.frm-cntnr {
+				width: 90%;
+				margin-top: 60px;
+
+				&.active {
+					animation: unset;
+					opacity: 1;
+				}
+
+				h1, p {
+					color: #5C5C5C;
+				}
+
+				h1 {
+					margin-bottom: 30px;
+				}
+
+				.width--50 {
+					width: 100%;
+				}
+			}
+		}
+
+		.hm1__bgWhite {
+			height: 70px;
+			top: 250px;
+			bottom: unset;
+
+			&.active {
+				animation: unset;
+			}
+		}
+
+		.hm1__bgRed {
+			height: 70px;
+			top: 230px;
+			bottom: unset;
+			transform: skew(0deg,-4deg);
+
+			&.active {
+				animation: unset;
+			}
+		}
+
+		.progressBarContainer {
+			bottom: 10px;
+
+			div span.progressBar {
+				background-color: #C4C4C4;
+			}
+		}
+	}
+
+	.hm-frame5 {
+		padding-bottom: 30px;
+
+		.frm-cntnr {
+			width: 90%;
+		}
+
+		.width--45 {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 60px;
+		}
+
+		.width--55 {
+			display: block;
+			width: 100%;
+			padding-left: 0;
+		}
+
+		.hm5__sliderCon {
+
+			.hm5__sliderListCon:before {
+				display: none;
+			}
+
+			.hm5__textCon {
+				position: unset;
+				padding: 0 0 40px;
+				margin-top: 25px;
+
+				p {
+					height: auto;
+					-webkit-line-clamp: unset;
+					overflow: unset;
+				}
+			}
+
+			.slick-dots {
+				width: 100%;
+				margin: auto;
+			}
+		}
+
+		.hm5__bgGray {
+			display: block;
+		}
+	}
+
+	.hm-frame6 {
+		padding-top: 100px;
+
+		.frm-cntnr {
+			width: 90%;
+		}
+
+		.width--55 {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 60px;
+		}
+
+		.width--45 {
+			display: block;
+			width: 260px;
+			padding-left: 0;
+			margin: auto;
+		}
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	/*=================================================================================
+	|                                    Home Styling                                 |600px
+	=================================================================================*/
+	.hm-frame3 .hm3__contentCon {
+
+		.page__gridChild {
+			width: 100%;
+
+			&:nth-child(2n -1) {
+				padding-right: 0%;
+			}
+
+			&:nth-child(2n) {
+				padding-left: 0%;
+			}
+		}
+
+		.hm3__textPrev h6 {
+			font-size: 20px;
+		}
+	}
+
+	/*.hm-frame4 {
+
+		.hm4__contentCon {
+
+			.hm4__listCon {
+				width: 100%;
+				margin-bottom: 60px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.hm4__listInnerCon > p {
+				padding: 15px;
+			}
+		}
+	}*/
+
+}
+
+@media screen and (max-width: 480px) {
+
+	/*=================================================================================
+	|                                  Footer Styling                                 |480px
+	=================================================================================*/
+	.ftr-frame .ftr__topCon {
+
+		.width--45 {
+		
+			.width--40 {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			.width--60 {
+				width: 100%;
+			}
+		}
+
+		.ftr__contactLink i {
+			margin-top: 7px;
+		}
+
+		h6 {
+
+			.ftr__arrow {
+				display: inline-block;
+			}
+
+			&.active .ftr__arrow {
+				margin-bottom: -1px;
+				transform: rotate(-135deg);
+			}
+		}
+
+		ul {
+			display: none;
+		}
+	}
+
+
+
+
+
+	/*=================================================================================
+	|                                    Home Styling                                 |480px
+	=================================================================================*/
+	.hm-frame1 {
+
+		.hm1__sliderListCon .hm1__sliderBGCon {
+			height: 250px;
+			min-height: unset;
+		}
+
+		.hm1__bgWhite {
+			top: 240px;
+		}
+
+		.hm1__bgRed {
+			top: 230px;
+		}
+	}
+
+	.hm-frame5 .width--45 img {
+		width: 100%;
+	}
+
+	.hm-frame6 .width--45 img {
+		width: 260px;
+	}
+
+}

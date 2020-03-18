@@ -1,0 +1,82 @@
+/** 
+ * VARIABLES
+ * --
+ * Set the default values according to your preference.
+**/
+
+
+/** 
+ * COLORS
+ * --
+ * Add all the colors that you needed. Format: color--[colorname]
+ */
+/* Primary Colors */
+$color--primary1: #F47526;		//Orange
+$color--primary2: #1D8DC6;		//Blue
+
+/* Secondary Colors */
+$color--yellow: #F9B02A;		//Yellow | Accent Color
+$color--red: #E42426;			//Red | Button Color
+$color--black: #2B2B2B;			//Paragraph Text, Frame Title
+$color--gray: #C4C4C4;			//Frame subtitle, inactive element
+$color--white: #ffffff;			//Button Text
+$color--darkGray: #ADADAD;
+$color--darkerGray: #949494;
+$color--lighterGray: #EEEEEE;
+$color--green: #1D934D;
+
+
+/** 
+ * FONTS
+ * --
+ */
+$font--1: 'flama' sans-serif;			//H1, H2 | Banner Title, Frame Title
+
+/** 
+ * FONTS SIZE
+ * --
+ */
+$font-size-default: 1rem;			//16px | Default
+
+$font-size-largest: 3rem;			//48px | H1, Banner Text
+$font-size-larger: 2.438rem;		//39px | H2, Inner Banner Title
+$font-size-large: 1.938rem;			//31px | H3, Frame Subtitle
+$font-size-medium: 1.563rem;		//25px | H4, Banner Subtitle
+$font-size-small: 1.250rem;			//20px | H5
+$font-size-smaller: 1rem;			//16px | H6 | Small, Body Subtext, Button, Input
+$font-size-smaller2: 0.875rem;		//14px | Header
+$font-size-smallest: 0.813rem;		//13px | Small | Footer
+$font-size-smallest2: 0.750rem;		//12px
+
+
+/** 
+ * PADDING
+ * --
+ */
+$frm-padding: 70px 0; // Padding for top & bottom
+
+/** 
+ * Frame Background
+ * --
+ */
+$frame-bg--pos__t: top center;
+$frame-bg--pos__r: right center;
+$frame-bg--pos__b: bottom center;
+$frame-bg--pos__l: left center;
+$frame-bg--pos__c: center center;
+
+
+//Border-Radius
+//$border-radius-default: 8px;	//
+//$border-radius-20: 20px;		//
+//$border-radius-4: 4px;		//
+
+
+//z-index notes
+//0-5 		- Background elements
+//6-10	 	- Midground elements
+//11-15		- Foreground elements
+//90		- Elements that includes Header
+//100		- Header
+//120		- Header Side Nav
+//150		- Modals | Pop Up 
