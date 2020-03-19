@@ -45,9 +45,9 @@ namespace {
 
 		private static $summary_fields = array(
 			'JobTitle' => 'Job Title',
-			'Name' => 'Name',
+			'FirstName' => 'First Name',
 			'ContactNumber' => 'Contact Number',
-			'Email' => 'Email',
+			'EmailAddress' => 'Email',
 		);
 
 		public function getThumbnail() {

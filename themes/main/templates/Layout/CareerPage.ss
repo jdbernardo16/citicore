@@ -1,7 +1,8 @@
 <div class="crr_frame1">
+	<div class="banner" style="background-image: url('$F1BG.URL');"></div>
 	<div class="frm-cntnr width--85">
 		<div class="page-title">
-			<h2>Careers</h2>
+			<h2>$F1Header</h2>
 		</div>
 		<div class="top-nav">
 			<div class="inlineBlock-parent">

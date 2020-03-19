@@ -28,15 +28,17 @@
 </div>
 <div class="scrr_frame2">
 	<div class="frm-cntnr width--85">
+		<% loop $Parent %>
 		<div class="frm-title">
-			<h4>Apply for a job</h4>
+			<h4>$CF1Header</h4>
 		</div>
 		<div class="frm-desc">
-			<p>Please kindly download the applicant form before filling up in the fields below.</p>
+			<p>$CF1Desc</p>
 		</div>
 		<div class="download-btn">
-			<a href="">Download Applicant Form</a>
+			<a href="$File1.URL" target="_blank">Download Applicant Form</a>
 		</div>
+		<% end_loop %>
 		<div class="applyform">
 			<form id="applyForm" method="POST">
 				<input type="hidden" name="jobtitle" value="$JobTitle" required>
@@ -63,11 +65,11 @@
 							<option value="Doctoral">Doctoral</option>
 						</select>
 					</div>
-					<div class="upload-hldr">
-						<div class="inlineBlock-parent" data-id="{$ID}">
-								<label id="file-selected1" for="fileupload{$ID}" class="custom-file-upload inlineBlock-parent"><div class="label-upload"><p>Attached Resume</p></div><div class="upload-btn"><p>Choose File</p></div></label>
-							<input type="file" id="fileupload{$ID}" class="fileuploadBtn" name="file" required hidden/>
-							<input type="hidden" id="file-image{$ID}" name="resume" value="" required/>
+					<div id="upload-hldr" class="upload-hldr">
+						<div class="inlineBlock-parent">
+								<label id="file-selected" for="fileupload" class="custom-file-upload inlineBlock-parent"><div class="label-upload"><p>Attached Resume</p></div><div class="upload-btn"><p>Choose File</p><label>PDF Only and limit 100MB</label></div></label>
+							<input type="file" id="fileupload" class="fileuploadBtn" name="file" required style="display: none;">
+							<input type="hidden" id="file-image" name="resume" value="" required/>
 						</div>
 					</div>
 				</div

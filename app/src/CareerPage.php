@@ -40,13 +40,21 @@ namespace {
 		private static $db = [
 
 			'EmailRecipient' => 'Text',
+
+
+			'F1Header' => 'Text',
+
+
+			'CF1Header' => 'Text',
+			'CF1Desc' => 'Text',
 		
 			
 
 		];
 
 		private static $has_one = [
-
+			'F1BG' => Image::class,
+			'File1' => File::class,
 			
 
 		];
@@ -56,9 +64,8 @@ namespace {
 		];
 
 		private static $owns = [
-
-			
-
+			'F1BG',
+			'File1',
 		];
 
 		private static $allowed_children = array(
@@ -75,10 +82,40 @@ namespace {
 		public function getCMSFields() {
 			$fields = parent::getCMSFields();
 
+			
+
 			/*
 			|-----------------------------------------------
 			| @Frame1
 			|----------------------------------------------- */
+			$fields->addFieldsToTab('Root.Frame1.Main', array(
+				$uploadf1 = UploadField::create('F1BG','Banner'),
+				new TextField('F1Header', 'Frame Title'),
+			));
+			# SET FIELD DESCRIPTION 
+			$uploadf1->setDescription('Max file size: 2MB | Dimension: 1366px x 768px');
+			# Set destination path for the uploaded images.
+			$uploadf1->setFolderName('careerpage/Banner');
+
+			/*
+			|-----------------------------------------------
+			| @Apply
+			|----------------------------------------------- */
+			$fields->addFieldsToTab('Root.Application.Main', array(
+				new TextField('CF1Header', 'Frame Title'),
+				new TextareaField('CF1Desc', 'Frame Description'),
+				$uploadf2 = UploadField::create('File1','Application Form'),
+			));
+			# SET FIELD DESCRIPTION 
+			$uploadf2->setDescription('Max file size: 2MB');
+			# Set destination path for the uploaded images.
+			$uploadf2->setFolderName('careerpage/applicationform');
+
+
+
+
+
+			#Email
 			$fields->addFieldsToTab('Root.Email.Main', array(
 				new TextField('EmailRecipient', 'Email Recipient'),
 			));

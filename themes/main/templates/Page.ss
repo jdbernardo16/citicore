@@ -123,16 +123,25 @@
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <%--  --%>
+        
+
 
         <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
 
         <!-- Script -->
         <script type="text/javascript" src="$ThemeDir/assets/vendor.js"></script>
         <script type="text/javascript" src="$ThemeDir/assets/app.js"></script>
-        <script type="text/javascript" src="$ThemeDir/assets/script.js"></script>
+        
+        <!-- File Upload -->
+        <script src="$ThemeDir/js/vendor/jquery.ui.widget.js"></script>
+        <script src="$ThemeDir/js/vendor/jquery.iframe-transport.js"></script>
+        <script src="$ThemeDir/js/vendor/jquery.fileupload.js"></script>
+        <!--  -->
 
         <!-- Vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>

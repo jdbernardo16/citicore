@@ -196,7 +196,7 @@ class ApplyController extends Controller {
 		// $headers .= "\r\n" . "MIME-Version: 1.0" . "\r\n";
 		// $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
-		$subject = $this->subject .'Ultimate Freight: New Applicant!';
+		$subject = $this->subject .'Citicore-CESI: New Applicant!';
 
 		$message = $this->getAdminEmailTemplate();
 
@@ -218,7 +218,7 @@ class ApplyController extends Controller {
 		    'email' => $this->email,
 		    'contact' => $this->contact,
 		    'file' => $this->file->AbsoluteLink(),
-		    // 'education' => $this->education,
+		    'education' => $this->education,
 		));
 
 		return $arrayData->renderWith('ApplyAdminEmailTemplate');
@@ -233,7 +233,7 @@ class ApplyController extends Controller {
 		// print_r('Email confirmation...');
 		
 		$recipients = explode(',', $this->email);
-		$subject = $this->subject .'Ultimate Freight: This is to notify you that we have succesfully received your message on ultimatefreight.com';
+		$subject = $this->subject .'Citicore-CESI: This is to notify you that we have succesfully received your message on ultimatefreight.com';
 		
 		// Enables HTML Text
 		// $headers .= "\r\n" . "MIME-Version: 1.0" . "\r\n";
@@ -266,7 +266,7 @@ class ApplyController extends Controller {
 		    $mail->Password = '5xRaJCyQ6ddWRTeR';
 		    $mail->Port = 587;
 
-			$mail->setFrom('no-reply@praxxys.ph', 'www.ultimatefreight.com');
+			$mail->setFrom('no-reply@praxxys.ph', 'www.citicore-cesi.com');
 
 			// Add in each recipient to the "TO"
 			foreach ($recipients as $recipient) {
